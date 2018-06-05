@@ -51,7 +51,7 @@
 }
 
 
-.action {
+#action {
   .form
   {
     background-color: #fff;
@@ -71,4 +71,9 @@
   bottom: 0;
   left: -120px;
   background-size: contain;
+  display: none;
+  @include media-breakpoint-up(md)
+  {
+    display: block;
+  }
 }
