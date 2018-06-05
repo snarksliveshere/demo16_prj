@@ -1,0 +1,24 @@
+#pict_1
+{
+  background:url("/img/pict1_bg.jpg") 0 0 no-repeat;
+  .item_img
+  {
+    &>div
+    {
+      border:1px solid yellow;
+      position: relative;
+    }
+  }
+}
+#pict_2
+{
+  .item_img
+  {
+    img
+    {
+      padding: 15px;
+      border-radius:50%;
+      border:5px solid $bg_color;
+    }
+  }
+}

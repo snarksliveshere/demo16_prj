@@ -1,14 +1,32 @@
 .main_slider
 {
-    .item {
-        &_text
-        {
-            
-        }
-        &_img
-        {
-            position: relative;
+    .rozetka {
+        background-image: url("../img/rozetka.png");
+        width: 204px;
+        height: 204px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        box-sizing: border-box;
+        padding:20px 38px;
+    }
+
+}
+
+.main_slider .item_text {
+    p
+    {
+        @include media-breakpoint-up(xl) {
+            font-size: 45px;
         }
     }
+    .h1
+    {
+        @include media-breakpoint-up(xl) {
+            font-size: 50px;
+        }
+    }
+
 
 }

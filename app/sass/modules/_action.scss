@@ -1,25 +1,8 @@
-.action
+#action
 {
     background: linear-gradient(135deg, rgba(255,255,1,1) 0%,rgba(255,237,0,1) 100%);
-    .item
+    .item_text
     {
-        height: 150px;
-        text-align: center;
-        z-index: 2;
-        position: relative;
-        &:before
-        {
-            display: inline-block;
-            content: '';
-            height: 50%;
-
-        }
-        img
-        {
-            display: inline-block;
-
-        }
-
+        font-size: 25px;
     }
-
 }

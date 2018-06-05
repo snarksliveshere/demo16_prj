@@ -1,0 +1,74 @@
+#footer_bigform
+{
+    background: linear-gradient(135deg, rgba(7,0,28,1) 0%,rgba(41,137,216,1) 64%,rgba(32,124,202,1) 79%,rgba(37,91,136,1) 100%);
+  .form
+  {
+    background: #fff;
+    padding: 30px;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding:10px 5%;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius:10px;
+
+  &:hover
+  {
+    color: #fff;
+  }
+
+  @include media-breakpoint-up(md)
+  {
+    font-size: 25px;
+    padding:15px 15%;
+  }
+
+
+
+}
+
+.button-links {
+  background: $links_color;
+  color: #fff;
+}
+.button-next {
+  background: $button_next_color;
+  color: #fff;
+}
+#half_2 {
+  .form
+  {
+    background: #192963;
+    
+    &.form_pribluda:after
+    {
+      background-image: url(../img/clipboard.png);
+    }
+  }  
+}
+
+
+.action {
+  .form
+  {
+    background-color: #fff;
+    position: relative;
+
+    &.form_pribluda:after
+    {
+      background-image: url("../img/giftbox.png");
+    }
+  }
+}
+.form_pribluda:after {
+  position: absolute;
+  content: '';
+  width: 174px;
+  height: 174px;
+  bottom: 0;
+  left: -120px;
+  background-size: contain;
+}

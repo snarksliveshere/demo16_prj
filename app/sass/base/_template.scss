@@ -1,11 +1,8 @@
-// fonts
-.opensans {
-    font-family: $open_sans;
-}
+
 // TYPO
 // headers
 .h1, .h2, .h3, .h4, .h5 {
-    @include pad-inner();
+    @include pad-y();
 
 }
 .h1 {
@@ -54,7 +51,6 @@ a {
 table
 {
     border-collapse: collapse;
-    font-family: $open_sans;
     width: 100%;
 
     thead {
@@ -86,27 +82,7 @@ table
         -ms-overflow-style: -ms-autohiding-scrollbar;
     }
 
-    &_2col
-    {
-        tr
-        {
-            td
-            {
-                &:last-child
-                {
-                    text-align: right;
-                }
 
-            }
-
-        }
-    }
-    &_zebra
-    {
-        tr:nth-child(odd) {
-            background-color: $table_gray_color;
-        }
-    }
 }
 
 p {
@@ -137,32 +113,6 @@ ul {
     }
 }
 
-.ta-right-2-center {
-    text-align: center;
-    &:after {
-        right: 0;
-        left: 0;
-        margin: 0 auto;
-    }
-    @include media-breakpoint-up(md)
-    {
-        text-align: right;
-        &:after {
-            right: 0;
-            left: auto;
-        }
-    }
-}
-.ta-right-2-left {
-    @include media-breakpoint-up(md)
-    {
-        text-align: right;
-        &:after {
-            right: 0;
-            left: auto;
-        }
-    }
-}
 
 ul {
     margin-bottom: 0;
@@ -183,7 +133,7 @@ ul {
 
 
 i {
-    color: $another_blue;
+    color: $main_color;
 }
 .posa {
     position: absolute;
@@ -227,6 +177,9 @@ i {
 .white {
     color: #fff;
 }
+.black {
+    color: #000;
+}
 .unselectable {
     -moz-user-select: none;
     -khtml-user-select: none;
@@ -261,4 +214,6 @@ i {
     z-index: 2;
     background: rgba(0,0,0,0.2);
 }
-
+.cur {
+    cursor: pointer;
+}
